@@ -5,7 +5,7 @@
         <title>CIS Syllabi - Mimi Lam</title>
         <link rel="icon" href="../assets/images/favicon.ico">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <!--<link rel="stylesheet" href="main.css"/>-->
+        <link rel="stylesheet" href="../assets/css/main.css"/>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -13,7 +13,7 @@
     <body>
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand mx-auto" href="index.html">
                     <img src="../assets/images/favicon.ico"/>
                     Mimi Lam
                 </a>
@@ -22,65 +22,84 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbar">
                     <div class="navbar-nav">
-                        <a href="index.html" class="btn btn-outline-primary" role="button">Home</a>
-                        <a href="about.html" class="btn btn-outline-primary" role="button">About Me</a> <p>&#9733;</p>
-                        <a href="projects.html" class="btn btn-outline-primary" role="button">Projects</a> <p>&#9733;</p>
+                        <a href="index.html" class="btn btn-outline-primary" role="button">Home</a> <p class="star">&#9733;</p>
+                        <a href="about.html" class="btn btn-outline-primary" role="button">About Me</a> <p class="star">&#9733;</p>
+                        <a href="projects.html" class="btn btn-outline-primary" role="button">Projects</a> <p class="star">&#9733;</p>
                         <a href="contact.html" class="btn btn-outline-primary" role="button">Contact</a>
                     </div>
                 </div>
             </nav>
         </header>
-        <h2>CIS Syllabi - <a href="http://catalog.southeasttech.edu/preview_program.php?catoid=7&poid=734&returnto=538">Southeast Technical Institute</a></h2>
         <br/>
-        <div class="row text-center no-gutters">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-2">
-                <a href="syllabi/cis106_introduction_to_computers.pdf">CIS106 - Introduction to Computers</a> 
-            </div>
-            <div class="col-lg-2">
-                <a href="syllabi/cis130_introduction_to_programming.pdf">CIS130 - Introduction to Programming</a> 
-            </div>
-            <div class="col-lg-2">
-                <a href="syllabi/cis131_c#_programming.pdf">CIS131 - C# Programming</a> 
-            </div>
-            <div class="col-lg-2">
-                <a href="syllabi/cis149_introduction_to_java.pdf">CIS149 - Introduction to Java</a>
-            </div>
-            <div class="col-lg-2"></div>
+        <div class="block container rounded p-3 text-center">
+            <h1>CIS Syllabi</h1>
+            <br/>
+            <p>A list of CIS Syllabi.</p>
         </div>
         <br/>
-        <div class="row text-center no-gutters">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-2">
-                <a href="syllabi/cis194_introduction_to_databases.pdf">CIS194 - Introduction to Databases</a> 
+        <div class="block container rounded p-3 text-center">
+            <h2><a href="http://catalog.southeasttech.edu/preview_program.php?catoid=17&poid=2004">Southeast Technical Institute</a></h2>
+            <br/>
+            <div class="row no-gutters">
+                <div class="col-lg-3">
+                    <p><a href="../assets/pdf/cis106_introduction_to_computers.pdf">CIS106 <br/> Introduction to Computers</a></p>
+                </div>
+                <div class="col-lg-3">
+                    <p><a href="../assets/pdf/cis130_introduction_to_programming.pdf">CIS130 <br/> Introduction to Programming</a></p>
+                </div>
+                <div class="col-lg-3">
+                    <p><a href="../assets/pdf/cis131_c#_programming.pdf">CIS131 <br/> C# Programming</a></p>
+                </div>
+                <div class="col-lg-3">
+                    <p><a href="../assets/pdf/cis149_introduction_to_java.pdf">CIS149 <br/> Introduction to Java</a></p>
+                </div>
             </div>
-            <div class="col-lg-2">
-                <a href="syllabi/cis195_internet_programming_essentials.pdf">CIS195 - Internet Programming Essentials</a> 
+            <br/>
+            <div class="row text-center no-gutters">
+                <div class="col-lg-3">
+                    <p><a href="../assets/pdf/cis194_introduction_to_databases.pdf">CIS194 <br/> Introduction to Databases</a></p>
+                </div>
+                <div class="col-lg-3">
+                    <p><a href="../assets/pdf/cis195_internet_programming_essentials.pdf">CIS195 <br/> Internet Programming Essentials</a></p>
+                </div>
+                <div class="col-lg-3">
+                    <p><a href="../assets/pdf/cis196_internet_programming_ii.pdf">CIS196 <br/> Internet Programming II</a></p>
+                </div>
+                <div class="col-lg-3">
+                    <p><a href="../assets/pdf/cis207_ebusiness.pdf">CIS207 <br/> eBusiness</a></p>
+                </div>
             </div>
-            <div class="col-lg-2">
-                <a href="syllabi/cis196_internet_programming_ii.pdf">CIS196 - Internet Programming II</a>
+            <br/>
+            <div class="row text-center no-gutters">
+                <div class="col-lg-3">
+                    <p><a href="../assets/pdf/cis236_introduction_to_msweb_development.pdf">CIS236 <br/> Introduction to Microsoft Web Development</a></p>
+                </div>
+                <div class="col-lg-3">
+                    <p><a href="../assets/pdf/cis241_dynamic_website_development.pdf">CIS241 <br/> Dynamic Website Development</a></p>
+                </div>
+                <div class="col-lg-3">
+                    <p><a href="../assets/pdf/cis249_advanced_objectoriented_programming.pdf">CIS249 <br/> Advanced Object Oriented Programming</a></p>
+                </div>
+                <div class="col-lg-3">
+                    <p><a href="../assets/pdf/cis279_advanced_databases.pdf">CIS279 <br/> Advanced Databases</a></p>
+                </div>
             </div>
-            <div class="col-lg-2">
-                <a href="syllabi/cis207_ebusiness.pdf">CIS207 - eBusiness</a>
+            <br/>
+            <div class="row text-center no-gutters">
+                <div class="col-lg-3">
+                    <p><a href="../assets/pdf/cis169_network_and_os_fundamentals.pdf">CIS169 <br/> Network and OS Fundamentals</a></p>
+                </div>
+                <div class="col-lg-3">
+                    <p><a href="../assets/pdf/cis296_advanced_microsoft_web_development.pdf">CIS296 <br/> Advanced Microsoft Web Development</a></p>
+                </div>
+                <div class="col-lg-3">
+                    <p><a href="../assets/pdf/cis266_web_services.pdf">CIS266 <br/> Web Services</a></p>
+                </div>
+                <div class="col-lg-3">
+                    <p><a href="../assets/pdf/cis299_internship.pdf">CIS299 <br/> Internship</a></p>
+                </div>
             </div>
-            <div class="col-lg-2"></div>
         </div>
-        <br/>
-        <div class="row text-center no-gutters">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-2">
-                <a href="syllabi/cis236_introduction_to_msweb_developement.pdf">CIS236 - Introduction to MS Web Development</a> 
-            </div>
-            <div class="col-lg-2">
-                <a href="syllabi/cis241_dynamic_website_development.pdf">CIS241 - Dynamic Website Development</a> 
-            </div>
-            <div class="col-lg-2">
-                <a href="syllabi/cis249_advanced_objectoriented_programming.pdf">CIS249 - Advanced Object Oriented Programming</a>
-            </div>
-            <div class="col-lg-2">
-                <a href="syllabi/cis279_advanced_databases.pdf">CIS279 - Advanced Databases</a>
-            </div>
-            <div class="col-lg-2"></div>
-        </div>
+
     </body>
 </html>
