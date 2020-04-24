@@ -1,0 +1,24 @@
+#headshot
+{
+    border-radius: 50%;
+}
+
+#headshot-div
+{
+    text-align: center;
+}
+
+#linkedin
+{
+    height: 32px;
+    width: 32px;
+}
+
+.cover-header-btn {
+    font-size: 150%;
+}
+
+.btn-outline-primary
+{
+    border: none;
+}
