@@ -11,8 +11,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
-    <div class="background">
-        <body>
+    <body>
+        <div class="content">
             <div class="container">
                 <div class="mx-auto pt-5 text-center">
                     <img src="../assets/images/headshot.PNG" alt="Picture of Mimi Lam" id="headshot"/>
@@ -20,14 +20,15 @@
             </div>
             <br/>
             <div class="block container rounded p-3 text-center">
-                <h1><strong>Hi! My name is Mimi Lam.</strong></h1>
+                <h1>Hi! My name is <i><strong>Mimi Lam</strong></i>,</h1>
                 <br/>
-                <h4>I'm an aspiring computer programming student who is always looking for a challenge.</h4>
+                <h2>(currently) a <i><strong>computer programming student</strong></i></h2>
+                <h2>and (forever) a <i><strong>lifelong learner</strong>.</i></h2>
                 <br/>
                 <div class="row no-gutters">
                     <div class="col-lg-3"></div>
                     <div class="col-lg-2">
-                        <a href="projects.html"><button type="button" class="btn btn-outline-primary cover-header-btn">Projects</button></a>
+                        <a href="projects.html"><button type="button" class="btn btn-outline-primary cover-header-btn">Portfolio</button></a>
                     </div>
                     <div class="col-lg-2">
                         <a href="timeline.html"><button type="button" class="btn btn-outline-primary cover-header-btn">Timeline</button></a>
@@ -42,36 +43,76 @@
                 <a href="https://www.linkedin.com/in/mimikhlam/"><button type="button" class="btn btn-outline-primary"><img src="../assets/images/linkedin.png" id="linkedin"/></button></a>
             </div>
             <br/><br/>
+            <div class="text-center">
+                <a href="#about"><button type="button" class="btn btn-link"><img src="../assets/images/caret-down-fill.svg" style="width: 50px; height: 50px;"/></button></a>
+            </div>
             <br/><br/>
-            <br/><br/>
-            <br/><br/>
-            <div class="block container-fluid rounded p-3 text-center">
-                <h2><strong>About</strong></h2>
-                <h4>I'm Mimi, (currently) a computer programming student and (forever) a lifelong learner.</h4>
+            <div id="about" class="block container-fluid rounded p-3 text-center">
+                <h3><strong>It's nice to meet you!</strong></h3>
                 <br/>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <div class="container">
+                    <p>
+                        Ever since creating my first "Hello World" project in my junior year of high school, 
+                        I have found my passion to be in creating, either through code or through my imagination. 
+                        I plan to achieve my dreams and <i>reach for the stars</i>, one line of code at a time.
+                    </p>
+                    <p>
+                        <strong>I believe that every programmer starts somewhere</strong>.
+                        I believe in tracking <i>growth</i> as a programmer throughout the years and documenting the journey,
+                        all the way from the beginning.
+                    </p>
+                    <p>
+                        Here's a couple things I learned throughout my journey:
+                    </p>
+                </div>
+                <br/>
                 <div class="row no-gutters">
                     <div class="col-lg-4"></div>
                     <div class="col-lg-2">
-                        test
+                        <p>Java</p>
+                        <p>C#</p>
+                        <p>PHP</p>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JavaScript</p>
                     </div>
                     <div class="col-lg-2">
-                        test
+                        <p>GitHub</p>
+                        <p>Bootstrap</p>
+                        <p>JQuery</p>
+                        <p>AJAX</p>
                     </div>
                     <div class="col-lg-4"></div>
                 </div>
+                <br/>
+                <button class="btn btn-primary">See my journey</button>
             </div>
             <br/><br/>
             <div class="block container-fluid rounded p-3 text-center">
-                <h2><strong>Every programmer starts somewhere.</strong></h2>
-                <h4>I believe in tracking growth as a programmer throughout the years and documenting the journey, all the way from the beginning.</h4>
+                <h3><strong>Portfolio</strong></h3>
+                <br/>
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-2">
+                        <img src="../assets/images/bg.png"/>
+                    </div>
+                    <div class="col-lg-2">
+                        <img src="../assets/images/bg.png"/>
+                    </div>
+                    <div class="col-lg-2">
+                        <img src="../assets/images/bg.png"/>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+                <br/><br/>
+                <button class="btn btn-primary">View more projects</button>
             </div>
             <br/><br/>
-            <
-        </body>
-    </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                footer
+            </div>
+        </footer>
+    </body>
 </html>
