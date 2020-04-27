@@ -47,7 +47,7 @@ a, a:hover
     }*/
 }
 
-@media only screen and (max-width: 641px)
+@media only screen and (max-width: 991px)
 {
     .star-light, .star-dark {
         display: none;
@@ -86,10 +86,47 @@ body {
     color: black;
 }
 
+/* Footer styles */
+
 .content {
     flex: 1 0 auto;
 }
 
 .footer {
     flex-shrink: 0;
+}
+
+.footer-link {
+    color: white;
+}
+
+.footer-link:hover {
+    color: #546bab;
+}
+
+/* Cover styles */
+
+#headshot
+{
+    border-radius: 50%;
+}
+
+#headshot-div
+{
+    text-align: center;
+}
+
+.linkedin
+{
+    height: 32px;
+    width: 32px;
+}
+
+.social {
+    border: none;
+}
+
+.cover-header-btn {
+    font-size: 150%;
+    border: none;
 }
