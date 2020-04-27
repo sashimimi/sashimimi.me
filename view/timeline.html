@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>Mimi Lam</title>
+        <link rel="icon" href="../assets/images/favicon.ico">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+        <link rel="stylesheet" href="../assets/css/main.css"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand mx-auto" href="index.html">
+                    <img src="../assets/images/favicon.ico"/>
+                    Mimi Lam
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <div class="navbar-nav">
+                        <a href="index.html" class="btn btn-outline-primary custom-navbar" role="button">Home</a> <p class="star-light">&#9733;</p>
+                        <a href="index.html#about" class="btn btn-outline-primary custom-navbar" role="button">About Me</a> <p class="star-light">&#9733;</p>
+                        <a href="portfolio.html" class="btn btn-outline-primary custom-navbar" role="button">Portfolio</a> <p class="star-light">&#9733;</p>
+                        <a href="timeline.html" class="btn btn-outline-primary custom-navbar" role="button">Timeline</a> <p class="star-light">&#9733;</p>
+                        <a href="contact.html" class="btn btn-outline-primary custom-navbar" role="button">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <div id="timeline-embed">
+                <div id="timeline"></div>
+            </div>
+        </div>
+        <footer class="footer bg-dark text-white text-center">
+            <div class="container p-3">
+                <div class="row no-gutters">
+                    <div class="col-lg-auto mx-auto">
+                        <a href="https://github.com/sashimimi"><button type="button" class="btn btn-outline-primary social"><img src="../assets/images/github-light.png"/></button></a>
+                        <a href="https://www.linkedin.com/in/mimikhlam/"><button type="button" class="btn btn-outline-primary social"><img src="../assets/images/linkedin.png" class="linkedin"/></button></a>    
+                    </div>
+                </div>
+                <br/>
+                <div class="row no-gutters">
+                    <div class="col-lg-auto mx-auto"><a href="index.html" class="footer-link">Home</a></div>
+                    <div class="star-light">&#9733;</div>
+                    <div class="col-lg-auto mx-auto"><a href="index.html#about" class="footer-link">About</a></div>
+                    <div class="star-light">&#9733;</div> 
+                    <div class="col-lg-auto mx-auto"><a href="portfolio.html" class="footer-link">Portfolio</a></div>
+                    <div class="star-light">&#9733;</div>
+                    <div class="col-lg-auto mx-auto"><a href="timeline.html" class="footer-link">Timeline</a></div>
+                    <div class="star-light">&#9733;</div>
+                    <div class="col-lg-auto mx-auto"><a href="contact.html" class="footer-link">Contact</a></div>
+                </div>
+                <br/>
+                <div class="row no-gutters">
+                    <div class="col-lg-auto mx-auto"><p>Mimi Lam</p></div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var embed = document.getElementById('timeline-embed');
+            embed.style.height = getComputedStyle(document.body).height;
+            window.timeline = new TL.Timeline('timeline-embed', '../assets/json/timeline.json', { hash_bookmark: false});
+            window.addEventListener('resize', function() {
+            var embed = document.getElementById('timeline-embed');
+            embed.style.height = getComputedStyle(document.body).height;
+            timeline.updateDisplay();
+            })
+        });
+      </script>
+</html>

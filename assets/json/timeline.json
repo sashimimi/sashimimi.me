@@ -1,0 +1,57 @@
+{
+    "title": {
+        "media": {
+          "url": "../assets/images/headshot.png",
+          "caption": "",
+          "credit": ""
+        },
+        "text": {
+          "headline": "Development Timeline of Mimi Lam",
+          "text": "<p>Welcome to my timeline! Here you will see my growth and journey to becoming a computer programmer throughout the years, all the way from the beginning.</p>"
+        }
+    },
+    "events": [
+      {
+        "media": {
+          "url": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "2016"
+        },
+        "text": {
+          "headline": "Website Design",
+          "text": "<p>In my sophomore year of high school, I took a website design course that taught how to use Adobe Dreamweaver to create websites.</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "2017"
+        },
+        "text": {
+          "headline": "AP Computer Science A",
+          "text": "<p>In my junior year of high school, I decided to challenge myself by taking Advanced Placement (AP) Computer Science A, an introductory college-level course teaching the Java programming language. Things started to take off from here!</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "2018"
+        },
+        "text": {
+          "headline": "AP Computer Science Principles",
+          "text": "<p>Continuing the trend of taking at least one computer science course each year, I challenged myself again by taking Advanced Placement (AP) Computer Science Principles, an introductory college-level course that focused on the big ideas of computer science.</p>"
+        }
+      }
+    ]
+}
