@@ -5,12 +5,11 @@
         <title>Mimi Lam</title>
         <link rel="icon" href="../assets/images/favicon.ico">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="../assets/css/main.css"/>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
     </head>
     <body>
         <header>
@@ -34,8 +33,21 @@
             </nav>
         </header>
         <div class="content">
-            <div id="timeline-embed">
-                <div id="timeline"></div>
+            <br/>
+            <div class="block container rounded p-3 text-center">
+                <h2>Contact</h2>
+                <p>If you would like to contact me, please refer to the links below.</p>
+            </div>
+            <br/>
+            <div class="container text-center">
+                <div class="row no-gutters">
+                    <div class="col-lg-auto mx-auto">
+                        <a href="https://www.linkedin.com/in/mimikhlam/"><img src="../assets/images/linkedin.png" class="linkedin"/>LinkedIn</a>
+                    </div>
+                    <div class="col-lg-auto mx-auto">
+                        <a href="mailto:mimikhlam@gmail.com"><i class="fa fa-envelope" style="font-size: 1.5em;"></i> Email</a>
+                    </div>
+                </div>
             </div>
         </div>
         <footer class="footer bg-dark text-white text-center">
@@ -65,20 +77,4 @@
             </div>
         </footer>
     </body>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            var options = {
-                hash_bookmark: false,
-                initial_zoom: 1
-            }
-            var embed = document.getElementById('timeline-embed');
-            embed.style.height = getComputedStyle(document.body).height;
-            window.timeline = new TL.Timeline('timeline-embed', '../assets/json/timeline.json', options);
-            window.addEventListener('resize', function() {
-            var embed = document.getElementById('timeline-embed');
-            embed.style.height = getComputedStyle(document.body).height;
-            timeline.updateDisplay();
-            })
-        });
-      </script>
 </html>
